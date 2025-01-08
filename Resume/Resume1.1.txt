@@ -1,0 +1,250 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+\begin{document}
+    % 
+    % 
+\begin{center}
+    % 
+    \textbf{\Huge \scshape \color{VividPurple}Tanish Sakate} \\ \vspace{8pt}
+    \small 
+    \faIcon{linkedin} \href{https://linkedin.com/in/tanishsakate}{\underline{linkedin.com/in/tanishsakate}} $|$
+    \faIcon{envelope} \href{mailto:tanishsakate@gmail.com}{\underline{tanishsakate@gmail.com}} $|$
+    \faIcon{phone} {\underline{+91 9359237642}}
+\end{center}
+
+\vspace{-5pt}
+
+\section{\color{VividPurple}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fergusson College}{May 2022}
+      {M.S. Data Science}{GPA: 9.2/10}
+    \resumeSubheading
+      {Marathwada Mitra Mandal College of Commerce}{May 2020}
+      {B.S. Computer Science}{GPA: 7.0/10}
+  \resumeSubHeadingListEnd
+
+\section{\color{VividPurple}SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, Rust, Pyspark, SparkSQL, PL/SQL, Apache Airflow, Prompt Engineering} \\
+     \textbf{Dev Tools}{: Git/GitHub, Microsoft Azure, Azure Data Factory, Databricks, VS Code, SSMS, Visual Studio, Azure Data Studio, SQLProfiler, DBeaver, Jira, DevOps Boards, Snowflake} \\
+     \textbf{Databases}{: SQLServer, MySQL, MongoDB, CosmosDB, Cognitive Search, ElasticSearch}
+    }}
+ \end{itemize}
+
+\section{\color{VividPurple}EXPERIENCE}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Ellicium Solutions} $|$ \footnotesize\emph{Software Developer}}{Jan. 2022 -- Present}
+        \newline   
+
+            \text{With 3 years of experience in the tech industry, including 2.7 years specializing in supply chain industry analytics, I am proficient in continuous learning, acquiring new skills, communication, initiative, and customer focus. My technical expertise includes \textbf{Python, SQL/PSQL, PySpark, ADF, ETL tools, and Azure}. As a leader of a team of over 10 data engineers, I contribute to effective data engineering while prioritizing customer needs, ensuring operational compliance, and fostering a collaborative team environment. I am dedicated to further strengthening my career and expanding my skill set by delivering excellence.}
+  \resumeSubHeadingListEnd
+\section{\color{VividPurple}PROJECTS}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{GTO}}{March 2022 -- Present}
+        \resumeItemListStart
+            \resumeItem{Developed an optimized, normalized data model to store supply chain information.}
+            
+            \resumeItem{Developed asynchronous Python web scraper pipelines using \textbf{asyncio}, reducing the time by 60\% to extract supplier information and supplier network using \textbf{Beautiful Soup} and \textbf{Selenium}.}
+
+            \resumeItem{Developed and later Migrated Python codebase to \textbf{PySpark} and developed \textbf{Data Factory} pipelines to trigger \textbf{Databricks} notebooks to fetch, transform, and load data into the database.}
+
+            \resumeItem{Developed Data Factory pipelines integrated with SQL databases to track pipeline stages and failures, with email notifications to stakeholders and owners.}
+
+            \resumeItem{Migrated whole Application SQL database to MongoDB as POC which included developing NoSql database and converting SQL queries to MongoDB syntax.}
+
+            \resumeItem{Developed a Python supplier name deduplication algorithm based on \textbf{regex} and various \textbf{fuzzy logic} methods using \textbf{NoSQL} databases \textbf{Elasticsearch}/\textbf{Cognitive Search}, reducing consultant work by 55\% and achieving an algorithm accuracy of 70\% and storing resultant for future reference to reduce time and optimize the process.}
+
+            \resumeItem{Developed a supplier research module API using FastAPI, OpenAI, and Bing API to fetch supplier names and all contact information from supplier websites using dynamic web scrapping based on industry or product names.}
+
+            \resumeItem{Developed a Python web scraping API to extract supplier contact information from official websites.}
+
+            \resumeItem{Developed an end-to-end RFP analysis and validation tool that fetches data from \textbf{ADLS}, processes the file, performs validations, creates analyses, uploads data into the database, and generates feedback based on the analysis.}
+
+            \resumeItem{Developed a generic Excel parser using Python and created a dynamic SQL data model to store all information regardless of input, reducing redevelopment by 70\% or more.}
+
+            \resumeItem{Led a team of 3 data engineers to build the RFP analysis tool, create the ADF pipeline, and develop Databricks scripts and database model updates to keep it optimized.}
+
+            \resumeItem{Developed an ETL tool where ADF is triggered when a file is uploaded to the SFTP portal. Databricks reads data into a notebook, performs data transformation generates input file machine learning prediction model, uploads the data into an Amazon S3 bucket, and notifies stakeholders with email notifications using SendGrid API integrated with ADF.}
+
+            \begin{flushright}
+              \color{gray}
+              \item
+            \end{flushright}
+
+            \resumeItem{Contributed to developing a supplier intelligence database with data modeling and optimizing SQL queries, creating supplier search API, validating and uploading the data into Cognitive search.}
+
+            \resumeItem{Led a team of 4 data engineers to migrate the supplier intelligence SQL database and python codebase to the \textbf{CosmosDB} database over Azure WebApp.}
+
+        
+            
+            \resumeItem{Should Cost Modeling: Interacted with clients to understand and gather requirements to develop should cost models for products, handle databases, and stored procedures, and present analyses on PowerBI dashboards.}
+
+
+            \resumeItem{Developed a SQL procedure to dynamically identify missing columns and constraints in the production database during deployment from IAC scripts. Dynamically generated alter/update SQL statements and upgraded the database by referring to IAC, reducing the occurrence of redundant code errors.}
+
+            \resumeItem{Leading group of data engineers to build RFP analysis tool considering extensive file validations, integrating external API to fetch currency, freight, duty, and tariff data. developed mapping algorithms and formula-based Excel sheets using Python.}
+
+            \resumeItem{Leading group of data engineers to build a geospatial algorithm to find the most optimized path to transport vendor-to-vendor items considering sea routes and roadways.}
+
+            \resumeItem{Lead data engineers in developing to migrate databricks code to Azure function app to reduce cold start time and better user experience.}
+
+            \resumeItem{Developed a live socket python code to stream live data fetched from web crawler to avoid application backend failure.}
+
+            \resumeItem{Led data engineering team to develop and integrate multiple external APIs(Mintec, Galoraht, Silicon Expert, Duty and Tariff66 ) to fetch data using ADF, applying multiple data sanity checks and storing it in the central database.}
+
+            \resumeItem{Led data engineering team to develop Excel parser for a should cost builder pipeline. Algorithm to map the best commodity present in SQL to a product using regex and OpenAI and creating Complex uploadable template which reduced manual BA work by around 85\%.}
+
+            \resumeItem{Guided data engineer in building data model in CosmosDB to store data considering data issue, storage issue, and from optimization perspective to avoid future rework.}
+        
+
+            
+  \resumeSubHeadingListEnd
+
+
+  
+  % \resumeItem{Developed a Python parser and data model to parse any input Excel and store data into the database, reducing redevelopment by 80\%.}
+%           \resumeItem{Integrated Python code with OpenAI to parse any type of Excel.}
+%           \resumeItem{Frontend integrated with Azure Datafactory initiating Databricks notebook to execute the process.}
+%         \resumeItemListEnd
+
+\end{document}
+
+            
+          
+
+
+%     \resumeProjectHeading
+%       {\textbf{BOM Extraction}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Integrated Azure Document Intelligence Studio with Python to extract information from input PDF files, reducing processing time by 95\% with 98\% accuracy.}
+%           \resumeItem{Implemented a robust algorithm for standardizing extracted data for consistency and accuracy.}
+%         \resumeItemListEnd
+    
+%     \resumeProjectHeading
+%       {\textbf{Supplier Intelligence and Should Costing - AI}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Developed an algorithm using Azure Bing Search and OpenAI, scrapping information from supplier websites and extracting necessary information.}
+%           \resumeItem{Developed an AI model to give a breakdown of products at two levels, mapping best commodity attributes and creating should cost in the database.}
+%           \resumeItem{Developed APIs using FastAPI, reducing consultant's time by 30\% - 50\%.}
+%         \resumeItemListEnd
+
+%     \resumeProjectHeading
+%       {\textbf{Supplier Intelligence}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Designed an optimized data model using normalization to store and retrieve all supplier information.}
+%           \resumeItem{Created APIs with FastAPI to upload supplier data into normalized tables.}
+%           \resumeItem{Developed high-performance queries for efficient retrieval of supplier information, improving user experience by 70\%.}
+%           \resumeItem{Implemented robust validation features to maintain data integrity.}
+%           \resumeItem{Developed Azure Cognitive Search database to fetch supplier information faster.}
+%         \resumeItemListEnd
+
+%     \resumeProjectHeading
+%       {\textbf{Specs Extraction Tool}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Developed a Python tool for web scraping using Beautiful Soup and Selenium to extract information from retailer websites.}
+%           \resumeItem{Developed an algorithm using fuzzy logic to fetch product details when not available by item code.}
+%           \resumeItem{Updated templates with extracted information using Openpyxl.}
+%         \resumeItemListEnd
+    
+%     \resumeProjectHeading
+%       {\textbf{ETL Tool}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Developed a robust ETL pipeline using Python and Azure Data Factory to extract data from various sources and transform it into a standardized format.}
+%           \resumeItem{Implemented efficient data loading strategies, optimizing the performance and reliability  of the ETL process.}
+%           \resumeItem{Integrated data quality checks to ensure accuracy and consistency of the transformed data.}
+%         \resumeItemListEnd
+    
+%     \resumeProjectHeading
+%       {\textbf{PowerBI Project}}{Jan. 2022 -- Present}
+%         \resumeItemListStart
+%           \resumeItem{Designed and developed interactive PowerBI dashboards to visualize key business metrics and trends.}
+%           \resumeItem{Integrated data from multiple sources, providing a comprehensive view of business performance.}
+%           \resumeItem{Collaborated with stakeholders to gather requirements and ensure the dashboards meet their needs.}
+%           \resumeItem{Optimized dashboard performance for real-time data analysis.}
+%         \resumeItemListEnd
+%   \resumeSubHeadingListEnd
+
+% \end{document}
+        
